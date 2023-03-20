@@ -44,10 +44,10 @@
     </div>
     <div class="page" id="second-page">
         <h1 id="title">佳宇的个人网页</h1>
-        <p id="subtitle">目前网站在时不时建设中，拭目以待</p>//还看？？听不懂
+        <p id="subtitle">目前网站在时不时建设中，拭目以待</p>
     </div>
     <script>
-        const pages = document.querySelectorAll('.page');
+        const pages = document.querySelectorAll('.page');<!--这是你该看的？？你在看啥-->
 
         function createCanvas(page) {
             const canvas = document.createElement('canvas');
@@ -122,7 +122,7 @@
         }
 
         function animate() {
-            ctx.clearRect(0, 0, canvas.width, canvas.height);//grdzrl，看个没完了是吧
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
             for (let i = 0; i < dotsArray.length; i++) {
                 dotsArray[i].update();
             }
@@ -156,7 +156,7 @@
 
     pages.forEach(page => createDotsAnimation(page));
     window.addEventListener('click', handleClickOrScroll);
-    window.addEventListener('wheel', handleClickOrScroll);//得！！！！
+    window.addEventListener('wheel', handleClickOrScroll);
 </script>
 </body>
 </html>
